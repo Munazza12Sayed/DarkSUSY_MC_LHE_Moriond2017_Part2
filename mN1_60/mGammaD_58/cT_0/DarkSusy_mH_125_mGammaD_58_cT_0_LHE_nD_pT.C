@@ -1,0 +1,177 @@
+{
+//=========Macro generated from canvas: cnv/cnv
+//=========  (Tue Nov 29 05:44:34 2016) by ROOT version5.34/36
+   TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
+   gStyle->SetOptFit(1);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   cnv->SetHighLightColor(2);
+   cnv->Range(-27.625,-0.01625,134.875,0.10875);
+   cnv->SetFillColor(0);
+   cnv->SetBorderMode(0);
+   cnv->SetBorderSize(2);
+   cnv->SetTickx(1);
+   cnv->SetTicky(1);
+   cnv->SetLeftMargin(0.17);
+   cnv->SetRightMargin(0.03);
+   cnv->SetTopMargin(0.07);
+   cnv->SetBottomMargin(0.13);
+   cnv->SetFrameFillStyle(0);
+   cnv->SetFrameBorderMode(0);
+   cnv->SetFrameFillStyle(0);
+   cnv->SetFrameBorderMode(0);
+   
+   TH1F *h_nD_1_pT_dummy = new TH1F("h_nD_1_pT_dummy","h_nD_1_pT_dummy",130,0,130);
+   h_nD_1_pT_dummy->SetMaximum(0.1);
+   h_nD_1_pT_dummy->SetLineStyle(0);
+   h_nD_1_pT_dummy->SetMarkerStyle(20);
+   h_nD_1_pT_dummy->GetXaxis()->SetTitle("p_{T} of n_{D} [GeV]");
+   h_nD_1_pT_dummy->GetXaxis()->SetLabelFont(42);
+   h_nD_1_pT_dummy->GetXaxis()->SetLabelOffset(0.007);
+   h_nD_1_pT_dummy->GetXaxis()->SetTitleSize(0.06);
+   h_nD_1_pT_dummy->GetXaxis()->SetTitleOffset(0.95);
+   h_nD_1_pT_dummy->GetXaxis()->SetTitleFont(42);
+   h_nD_1_pT_dummy->GetYaxis()->SetTitle("Fraction of events / 1 GeV");
+   h_nD_1_pT_dummy->GetYaxis()->SetLabelFont(42);
+   h_nD_1_pT_dummy->GetYaxis()->SetLabelOffset(0.007);
+   h_nD_1_pT_dummy->GetYaxis()->SetTitleSize(0.06);
+   h_nD_1_pT_dummy->GetYaxis()->SetTitleOffset(1.35);
+   h_nD_1_pT_dummy->GetYaxis()->SetTitleFont(42);
+   h_nD_1_pT_dummy->GetZaxis()->SetLabelFont(42);
+   h_nD_1_pT_dummy->GetZaxis()->SetLabelOffset(0.007);
+   h_nD_1_pT_dummy->GetZaxis()->SetTitleSize(0.06);
+   h_nD_1_pT_dummy->GetZaxis()->SetTitleFont(42);
+   h_nD_1_pT_dummy->Draw("");
+   
+   TH1F *h_nD_1_pT__19 = new TH1F("h_nD_1_pT__19","h_nD_1_pT",131,0,131);
+   h_nD_1_pT__19->SetBinContent(1,0.04062551);
+   h_nD_1_pT__19->SetBinContent(2,0.7444968);
+   h_nD_1_pT__19->SetBinContent(3,0.2148777);
+   h_nD_1_pT__19->SetBinError(1,0.0007126185);
+   h_nD_1_pT__19->SetBinError(2,0.003050627);
+   h_nD_1_pT__19->SetBinError(3,0.001638903);
+   h_nD_1_pT__19->SetEntries(79999);
+   h_nD_1_pT__19->SetDirectory(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#0000ff");
+   h_nD_1_pT__19->SetLineColor(ci);
+   h_nD_1_pT__19->SetLineWidth(2);
+   h_nD_1_pT__19->SetMarkerStyle(20);
+   h_nD_1_pT__19->GetXaxis()->SetLabelFont(42);
+   h_nD_1_pT__19->GetXaxis()->SetLabelOffset(0.007);
+   h_nD_1_pT__19->GetXaxis()->SetTitleSize(0.06);
+   h_nD_1_pT__19->GetXaxis()->SetTitleOffset(0.95);
+   h_nD_1_pT__19->GetXaxis()->SetTitleFont(42);
+   h_nD_1_pT__19->GetYaxis()->SetLabelFont(42);
+   h_nD_1_pT__19->GetYaxis()->SetLabelOffset(0.007);
+   h_nD_1_pT__19->GetYaxis()->SetTitleSize(0.06);
+   h_nD_1_pT__19->GetYaxis()->SetTitleOffset(1.3);
+   h_nD_1_pT__19->GetYaxis()->SetTitleFont(42);
+   h_nD_1_pT__19->GetZaxis()->SetLabelFont(42);
+   h_nD_1_pT__19->GetZaxis()->SetLabelOffset(0.007);
+   h_nD_1_pT__19->GetZaxis()->SetTitleSize(0.06);
+   h_nD_1_pT__19->GetZaxis()->SetTitleFont(42);
+   h_nD_1_pT__19->Draw("SAMEHIST");
+   
+   TH1F *h_nD_2_pT__20 = new TH1F("h_nD_2_pT__20","h_nD_2_pT",131,0,131);
+   h_nD_2_pT__20->SetBinContent(1,0.3597545);
+   h_nD_2_pT__20->SetBinContent(2,0.6225953);
+   h_nD_2_pT__20->SetBinContent(3,0.01765022);
+   h_nD_2_pT__20->SetBinError(1,0.00212061);
+   h_nD_2_pT__20->SetBinError(2,0.00278972);
+   h_nD_2_pT__20->SetBinError(3,0.0004697132);
+   h_nD_2_pT__20->SetEntries(79999);
+   h_nD_2_pT__20->SetDirectory(0);
+
+   ci = TColor::GetColor("#ff0000");
+   h_nD_2_pT__20->SetLineColor(ci);
+   h_nD_2_pT__20->SetLineWidth(2);
+   h_nD_2_pT__20->SetMarkerStyle(20);
+   h_nD_2_pT__20->GetXaxis()->SetLabelFont(42);
+   h_nD_2_pT__20->GetXaxis()->SetLabelOffset(0.007);
+   h_nD_2_pT__20->GetXaxis()->SetTitleSize(0.06);
+   h_nD_2_pT__20->GetXaxis()->SetTitleOffset(0.95);
+   h_nD_2_pT__20->GetXaxis()->SetTitleFont(42);
+   h_nD_2_pT__20->GetYaxis()->SetLabelFont(42);
+   h_nD_2_pT__20->GetYaxis()->SetLabelOffset(0.007);
+   h_nD_2_pT__20->GetYaxis()->SetTitleSize(0.06);
+   h_nD_2_pT__20->GetYaxis()->SetTitleOffset(1.3);
+   h_nD_2_pT__20->GetYaxis()->SetTitleFont(42);
+   h_nD_2_pT__20->GetZaxis()->SetLabelFont(42);
+   h_nD_2_pT__20->GetZaxis()->SetLabelOffset(0.007);
+   h_nD_2_pT__20->GetZaxis()->SetTitleSize(0.06);
+   h_nD_2_pT__20->GetZaxis()->SetTitleFont(42);
+   h_nD_2_pT__20->Draw("SAMEHIST");
+   
+   TLegend *leg = new TLegend(0.46,0.6744444,0.6955556,0.7644444,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextSize(0.02777778);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(0);
+   TLegendEntry *entry=leg->AddEntry("h_nD_1_pT","1st n_{D} (leading p_{T})","L");
+
+   ci = TColor::GetColor("#0000ff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(2);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("h_nD_2_pT","2nd n_{D}","L");
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(2);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   
+   leg = new TLegend(0.4566667,0.82,0.7822222,0.9066667,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextSize(0.02777778);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(0);
+   entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 0 mm}}","h");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   
+   leg = new TLegend(0.17,0.935,0.97,1,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextAlign(22);
+   leg->SetTextSize(0.045);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(0);
+   entry=leg->AddEntry("NULL","CMS Simulation (LHE) 13 TeV","h");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   cnv->Modified();
+   cnv->cd();
+   cnv->SetSelected(cnv);
+}
