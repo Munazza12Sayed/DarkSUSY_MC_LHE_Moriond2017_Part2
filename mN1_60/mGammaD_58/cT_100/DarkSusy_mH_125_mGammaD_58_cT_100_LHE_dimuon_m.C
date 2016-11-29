@@ -1,12 +1,12 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:47:41 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 21:05:37 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
    cnv->SetHighLightColor(2);
-   cnv->Range(-1.425918,-17875,1.079483,119625);
+   cnv->Range(-1.654403,-17875,2.195026,119625);
    cnv->SetFillColor(0);
    cnv->SetBorderMode(0);
    cnv->SetBorderSize(2);
@@ -22,8 +22,8 @@
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH1F *h_m2 = new TH1F("h_m2","h_m2",101,0.1,10.1);
-   h_m2->SetBinContent(102,79999);
+   TH1F *h_m2 = new TH1F("h_m2","h_m2",120,0.1,120.1);
+   h_m2->SetBinContent(58,79999);
    h_m2->SetMaximum(110000);
    h_m2->SetEntries(79999);
 
@@ -51,8 +51,8 @@
    h_m2->GetZaxis()->SetTitleFont(42);
    h_m2->Draw("");
    
-   TH1F *h_m1 = new TH1F("h_m1","h_m1",101,0.1,10.1);
-   h_m1->SetBinContent(102,79999);
+   TH1F *h_m1 = new TH1F("h_m1","h_m1",120,0.1,120.1);
+   h_m1->SetBinContent(58,79999);
    h_m1->SetEntries(79999);
 
    ci = TColor::GetColor("#ff0000");
@@ -83,7 +83,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 60  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);

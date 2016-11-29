@@ -1,12 +1,12 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:20:50 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 23:26:17 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
    cnv->SetHighLightColor(2);
-   cnv->Range(-4.2,-0.26,20.8,1.74);
+   cnv->Range(-25.45,-0.26,124.55,1.74);
    cnv->SetFillColor(0);
    cnv->SetBorderMode(0);
    cnv->SetBorderSize(2);
@@ -21,7 +21,7 @@
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH1F *h_n1_1_M_dummy = new TH1F("h_n1_1_M_dummy","h_n1_1_M_dummy",200,0.05,20.05);
+   TH1F *h_n1_1_M_dummy = new TH1F("h_n1_1_M_dummy","h_n1_1_M_dummy",200,0.05,120.05);
    h_n1_1_M_dummy->SetMaximum(1.6);
    h_n1_1_M_dummy->SetLineStyle(0);
    h_n1_1_M_dummy->SetMarkerStyle(20);
@@ -43,9 +43,9 @@
    h_n1_1_M_dummy->GetZaxis()->SetTitleFont(42);
    h_n1_1_M_dummy->Draw("");
    
-   TH1F *h_n1_1_M__19 = new TH1F("h_n1_1_M__19","h_n1_1_M",200,0.05,20.05);
-   h_n1_1_M__19->SetBinContent(100,1);
-   h_n1_1_M__19->SetBinError(100,0.003071505);
+   TH1F *h_n1_1_M__19 = new TH1F("h_n1_1_M__19","h_n1_1_M",200,0.05,120.05);
+   h_n1_1_M__19->SetBinContent(17,1);
+   h_n1_1_M__19->SetBinError(17,0.003071505);
    h_n1_1_M__19->SetEntries(105998);
    h_n1_1_M__19->SetDirectory(0);
 
@@ -79,7 +79,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 8.5 GeV, c#tau_{#gamma_{D}} = 1 mm}}","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 8.5 GeV, c#tau_{#gamma_{D}} = 1 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);

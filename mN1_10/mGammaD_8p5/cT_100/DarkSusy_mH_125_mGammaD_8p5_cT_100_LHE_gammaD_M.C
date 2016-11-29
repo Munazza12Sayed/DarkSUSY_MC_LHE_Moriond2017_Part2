@@ -1,12 +1,12 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:18:22 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 23:24:02 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
    cnv->SetHighLightColor(2);
-   cnv->Range(-1.425918,-0.2275,1.079483,1.5225);
+   cnv->Range(-1.63851,-0.2275,2.117429,1.5225);
    cnv->SetFillColor(0);
    cnv->SetBorderMode(0);
    cnv->SetBorderSize(2);
@@ -22,7 +22,7 @@
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH1F *h_gammaD_1_M_dummy = new TH1F("h_gammaD_1_M_dummy","h_gammaD_1_M_dummy",101,0.1,10.1);
+   TH1F *h_gammaD_1_M_dummy = new TH1F("h_gammaD_1_M_dummy","h_gammaD_1_M_dummy",101,0.1,101.1);
    h_gammaD_1_M_dummy->SetMaximum(1.4);
    h_gammaD_1_M_dummy->SetLineStyle(0);
    h_gammaD_1_M_dummy->SetMarkerStyle(20);
@@ -44,9 +44,9 @@
    h_gammaD_1_M_dummy->GetZaxis()->SetTitleFont(42);
    h_gammaD_1_M_dummy->Draw("");
    
-   TH1F *h_gammaD_1_M__41 = new TH1F("h_gammaD_1_M__41","h_gammaD_1_M",101,0.1,10.1);
-   h_gammaD_1_M__41->SetBinContent(85,1);
-   h_gammaD_1_M__41->SetBinError(85,0.002500016);
+   TH1F *h_gammaD_1_M__41 = new TH1F("h_gammaD_1_M__41","h_gammaD_1_M",101,0.1,101.1);
+   h_gammaD_1_M__41->SetBinContent(9,1);
+   h_gammaD_1_M__41->SetBinError(9,0.002500016);
    h_gammaD_1_M__41->SetEntries(159998);
    h_gammaD_1_M__41->SetDirectory(0);
 
@@ -80,7 +80,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 8.5 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 8.5 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);

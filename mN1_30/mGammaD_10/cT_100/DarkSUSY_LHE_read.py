@@ -65,7 +65,7 @@ info.SetBorderSize(0)
 info.SetTextFont(42)
 info.SetTextSize(0.02777778)
 info.SetMargin(0.13)
-info.SetHeader("#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = " + mass_Higgs +  " GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = " + mass_GammaD_Legend + " GeV, c#tau_{#gamma_{D}} = " + lifetime_GammaD_Legend + " mm}}" )
+info.SetHeader("#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = " + mass_Higgs +  " GeV, m_{n_{1}} = " + n1Mass +"  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = " + mass_GammaD_Legend + " GeV, c#tau_{#gamma_{D}} = " + lifetime_GammaD_Legend + " mm}}" )
 #info.SetHeader("#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{#gamma_{D} c#tau = "+lifetime_GammaD_Legend + "mm, Mass = " + mass_GammaD_Legend + "GeV}{M of h = " + hMass + "GeV, M of n_{1} = " + n1Mass + "GeV, M of n_{D} = " + nDMass + "GeV}}" )
 txtHeader2 = ROOT.TLegend(0.01333333,0.9311111,0.8133333,0.9955556)
 txtHeader2.SetFillColor(ROOT.kWhite)
@@ -360,8 +360,8 @@ h_n1_1_p_dummy.SetYTitle("Fraction of events / 1 GeV")
 h_n1_1_p_dummy.SetTitleOffset(1.35, "Y")
 h_n1_1_p_dummy.SetXTitle("p of n_{1} [GeV]")
 h_n1_1_p_dummy.SetMaximum( 0.1 )
-
-h_n1_1_M_dummy = ROOT.TH1F("h_n1_1_M_dummy", "h_n1_1_M_dummy", 200, 0.05, 20.05)
+#fix mass range for neutralino
+h_n1_1_M_dummy = ROOT.TH1F("h_n1_1_M_dummy", "h_n1_1_M_dummy", 200, 0.05, 120.05)
 h_n1_1_M_dummy.SetYTitle("Fraction of events / 0.1 GeV")
 h_n1_1_M_dummy.SetTitleOffset(1.35, "Y")
 h_n1_1_M_dummy.SetXTitle("Mass of n_{1} [GeV]")
@@ -372,7 +372,7 @@ h_n1_1_p.SetLineColor(ROOT.kBlue)
 h_n1_1_p.SetLineWidth(2)
 h_n1_1_p.SetLineStyle(1)
 
-h_n1_1_M = ROOT.TH1F("h_n1_1_M", "h_n1_1_M", 200, 0.05, 20.05)
+h_n1_1_M = ROOT.TH1F("h_n1_1_M", "h_n1_1_M", 200, 0.05, 120.05)
 h_n1_1_M.SetLineColor(ROOT.kBlue)
 h_n1_1_M.SetLineWidth(2)
 h_n1_1_M.SetLineStyle(1)
@@ -593,7 +593,7 @@ h_gammaD_1_p_dummy.SetTitleOffset(1.35, "Y")
 h_gammaD_1_p_dummy.SetXTitle("p of #gamma_{D} [GeV]")
 h_gammaD_1_p_dummy.SetMaximum( 0.1 )
 
-h_gammaD_1_M_dummy = ROOT.TH1F("h_gammaD_1_M_dummy", "h_gammaD_1_M_dummy", 101, 0.1, 10.1)
+h_gammaD_1_M_dummy = ROOT.TH1F("h_gammaD_1_M_dummy", "h_gammaD_1_M_dummy", 101, 0.1, 101.1)
 h_gammaD_1_M_dummy.SetYTitle("Fraction of events / 0.1 GeV")
 h_gammaD_1_M_dummy.SetTitleOffset(1.35, "Y")
 h_gammaD_1_M_dummy.SetXTitle("Mass of #gamma_{D} [GeV]")
@@ -604,7 +604,7 @@ h_gammaD_1_p.SetLineColor(ROOT.kBlue)
 h_gammaD_1_p.SetLineWidth(2)
 h_gammaD_1_p.SetLineStyle(1)
 
-h_gammaD_1_M = ROOT.TH1F("h_gammaD_1_M", "h_gammaD_1_M", 101, 0.1, 10.1)
+h_gammaD_1_M = ROOT.TH1F("h_gammaD_1_M", "h_gammaD_1_M", 101, 0.1, 101.1)
 h_gammaD_1_M.SetLineColor(ROOT.kBlue)
 h_gammaD_1_M.SetLineWidth(2)
 h_gammaD_1_M.SetLineStyle(1)
@@ -937,20 +937,20 @@ h_dimuon_m_fake_0.SetLineStyle(1)
 ################################################################################
 
 m_min  = 0.2113
-m_max  = 3.5536
-m_bins = 66
+m_max  = 120
+m_bins = 120
 
 h_m1_vs_m2 = ROOT.TH2F("h_m1_vs_m2", "h_m1_vs_m2", m_bins, m_min, m_max, m_bins, m_min, m_max)
 h_m1_vs_m2.SetYTitle("m_{1#mu#mu} [GeV]")
 h_m1_vs_m2.SetTitleOffset(1.3, "Y")
 h_m1_vs_m2.SetXTitle("m_{2#mu#mu} [GeV]")
 
-h_m1 = ROOT.TH1F("h_m1", "h_m1", 101, 0.1, 10.1)
+h_m1 = ROOT.TH1F("h_m1", "h_m1", 120, 0.1, 120.1)
 h_m1.SetLineColor(ROOT.kRed)
 h_m1.SetLineWidth(2)
 h_m1.SetLineStyle(1)
 
-h_m2 = ROOT.TH1F("h_m2", "h_m2", 101, 0.1, 10.1)
+h_m2 = ROOT.TH1F("h_m2", "h_m2", 120, 0.1, 120.1)
 h_m2.SetYTitle("Events / 0.1 GeV")
 h_m2.SetXTitle("m_{#mu#mu} [GeV]")
 h_m2.SetTitleOffset(1.35, "Y")

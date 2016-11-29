@@ -1,12 +1,12 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:47:39 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 21:05:34 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
    cnv->SetHighLightColor(2);
-   cnv->Range(-4.2,-0.26,20.8,1.74);
+   cnv->Range(-25.45,-0.26,124.55,1.74);
    cnv->SetFillColor(0);
    cnv->SetBorderMode(0);
    cnv->SetBorderSize(2);
@@ -21,7 +21,7 @@
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH1F *h_n1_1_M_dummy = new TH1F("h_n1_1_M_dummy","h_n1_1_M_dummy",200,0.05,20.05);
+   TH1F *h_n1_1_M_dummy = new TH1F("h_n1_1_M_dummy","h_n1_1_M_dummy",200,0.05,120.05);
    h_n1_1_M_dummy->SetMaximum(1.6);
    h_n1_1_M_dummy->SetLineStyle(0);
    h_n1_1_M_dummy->SetMarkerStyle(20);
@@ -43,6 +43,34 @@
    h_n1_1_M_dummy->GetZaxis()->SetTitleFont(42);
    h_n1_1_M_dummy->Draw("");
    
+   TH1F *h_n1_1_M__19 = new TH1F("h_n1_1_M__19","h_n1_1_M",200,0.05,120.05);
+   h_n1_1_M__19->SetBinContent(100,1);
+   h_n1_1_M__19->SetBinError(100,0.002500016);
+   h_n1_1_M__19->SetEntries(159998);
+   h_n1_1_M__19->SetDirectory(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#0000ff");
+   h_n1_1_M__19->SetLineColor(ci);
+   h_n1_1_M__19->SetLineWidth(2);
+   h_n1_1_M__19->SetMarkerStyle(20);
+   h_n1_1_M__19->GetXaxis()->SetLabelFont(42);
+   h_n1_1_M__19->GetXaxis()->SetLabelOffset(0.007);
+   h_n1_1_M__19->GetXaxis()->SetTitleSize(0.06);
+   h_n1_1_M__19->GetXaxis()->SetTitleOffset(0.95);
+   h_n1_1_M__19->GetXaxis()->SetTitleFont(42);
+   h_n1_1_M__19->GetYaxis()->SetLabelFont(42);
+   h_n1_1_M__19->GetYaxis()->SetLabelOffset(0.007);
+   h_n1_1_M__19->GetYaxis()->SetTitleSize(0.06);
+   h_n1_1_M__19->GetYaxis()->SetTitleOffset(1.3);
+   h_n1_1_M__19->GetYaxis()->SetTitleFont(42);
+   h_n1_1_M__19->GetZaxis()->SetLabelFont(42);
+   h_n1_1_M__19->GetZaxis()->SetLabelOffset(0.007);
+   h_n1_1_M__19->GetZaxis()->SetTitleSize(0.06);
+   h_n1_1_M__19->GetZaxis()->SetTitleFont(42);
+   h_n1_1_M__19->Draw("SAMEHIST");
+   
    TLegend *leg = new TLegend(0.4566667,0.82,0.7822222,0.9066667,NULL,"brNDC");
    leg->SetBorderSize(0);
    leg->SetTextSize(0.02777778);
@@ -51,7 +79,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 60  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);

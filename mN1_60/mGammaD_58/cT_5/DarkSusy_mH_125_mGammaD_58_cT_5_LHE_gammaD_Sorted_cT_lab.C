@@ -1,6 +1,6 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:50:19 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 21:10:29 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
@@ -141,7 +141,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 5 mm}}","h");
+   entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 60  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 58 GeV, c#tau_{#gamma_{D}} = 5 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);

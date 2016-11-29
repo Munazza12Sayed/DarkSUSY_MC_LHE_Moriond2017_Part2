@@ -1,12 +1,12 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:38:02 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 21:17:12 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
    cnv->SetHighLightColor(2);
-   cnv->Range(-1.425918,-0.2275,1.079483,1.5225);
+   cnv->Range(-1.63851,-0.2275,2.117429,1.5225);
    cnv->SetFillColor(0);
    cnv->SetBorderMode(0);
    cnv->SetBorderSize(2);
@@ -22,7 +22,7 @@
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH1F *h_gammaD_1_M_dummy = new TH1F("h_gammaD_1_M_dummy","h_gammaD_1_M_dummy",101,0.1,10.1);
+   TH1F *h_gammaD_1_M_dummy = new TH1F("h_gammaD_1_M_dummy","h_gammaD_1_M_dummy",101,0.1,101.1);
    h_gammaD_1_M_dummy->SetMaximum(1.4);
    h_gammaD_1_M_dummy->SetLineStyle(0);
    h_gammaD_1_M_dummy->SetMarkerStyle(20);
@@ -44,33 +44,33 @@
    h_gammaD_1_M_dummy->GetZaxis()->SetTitleFont(42);
    h_gammaD_1_M_dummy->Draw("");
    
-   TH1F *h_gammaD_1_M__40 = new TH1F("h_gammaD_1_M__40","h_gammaD_1_M",101,0.1,10.1);
-   h_gammaD_1_M__40->SetBinContent(100,1);
-   h_gammaD_1_M__40->SetBinError(100,0.002500016);
-   h_gammaD_1_M__40->SetEntries(159998);
-   h_gammaD_1_M__40->SetDirectory(0);
+   TH1F *h_gammaD_1_M__41 = new TH1F("h_gammaD_1_M__41","h_gammaD_1_M",101,0.1,101.1);
+   h_gammaD_1_M__41->SetBinContent(10,1);
+   h_gammaD_1_M__41->SetBinError(10,0.002500016);
+   h_gammaD_1_M__41->SetEntries(159998);
+   h_gammaD_1_M__41->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#0000ff");
-   h_gammaD_1_M__40->SetLineColor(ci);
-   h_gammaD_1_M__40->SetLineWidth(2);
-   h_gammaD_1_M__40->SetMarkerStyle(20);
-   h_gammaD_1_M__40->GetXaxis()->SetLabelFont(42);
-   h_gammaD_1_M__40->GetXaxis()->SetLabelOffset(0.007);
-   h_gammaD_1_M__40->GetXaxis()->SetTitleSize(0.06);
-   h_gammaD_1_M__40->GetXaxis()->SetTitleOffset(0.95);
-   h_gammaD_1_M__40->GetXaxis()->SetTitleFont(42);
-   h_gammaD_1_M__40->GetYaxis()->SetLabelFont(42);
-   h_gammaD_1_M__40->GetYaxis()->SetLabelOffset(0.007);
-   h_gammaD_1_M__40->GetYaxis()->SetTitleSize(0.06);
-   h_gammaD_1_M__40->GetYaxis()->SetTitleOffset(1.3);
-   h_gammaD_1_M__40->GetYaxis()->SetTitleFont(42);
-   h_gammaD_1_M__40->GetZaxis()->SetLabelFont(42);
-   h_gammaD_1_M__40->GetZaxis()->SetLabelOffset(0.007);
-   h_gammaD_1_M__40->GetZaxis()->SetTitleSize(0.06);
-   h_gammaD_1_M__40->GetZaxis()->SetTitleFont(42);
-   h_gammaD_1_M__40->Draw("SAMEHIST");
+   h_gammaD_1_M__41->SetLineColor(ci);
+   h_gammaD_1_M__41->SetLineWidth(2);
+   h_gammaD_1_M__41->SetMarkerStyle(20);
+   h_gammaD_1_M__41->GetXaxis()->SetLabelFont(42);
+   h_gammaD_1_M__41->GetXaxis()->SetLabelOffset(0.007);
+   h_gammaD_1_M__41->GetXaxis()->SetTitleSize(0.06);
+   h_gammaD_1_M__41->GetXaxis()->SetTitleOffset(0.95);
+   h_gammaD_1_M__41->GetXaxis()->SetTitleFont(42);
+   h_gammaD_1_M__41->GetYaxis()->SetLabelFont(42);
+   h_gammaD_1_M__41->GetYaxis()->SetLabelOffset(0.007);
+   h_gammaD_1_M__41->GetYaxis()->SetTitleSize(0.06);
+   h_gammaD_1_M__41->GetYaxis()->SetTitleOffset(1.3);
+   h_gammaD_1_M__41->GetYaxis()->SetTitleFont(42);
+   h_gammaD_1_M__41->GetZaxis()->SetLabelFont(42);
+   h_gammaD_1_M__41->GetZaxis()->SetLabelOffset(0.007);
+   h_gammaD_1_M__41->GetZaxis()->SetTitleSize(0.06);
+   h_gammaD_1_M__41->GetZaxis()->SetTitleFont(42);
+   h_gammaD_1_M__41->Draw("SAMEHIST");
    
    TLegend *leg = new TLegend(0.4566667,0.82,0.7822222,0.9066667,NULL,"brNDC");
    leg->SetBorderSize(0);
@@ -80,7 +80,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 10 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 30  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 10 GeV, c#tau_{#gamma_{D}} = 100 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);

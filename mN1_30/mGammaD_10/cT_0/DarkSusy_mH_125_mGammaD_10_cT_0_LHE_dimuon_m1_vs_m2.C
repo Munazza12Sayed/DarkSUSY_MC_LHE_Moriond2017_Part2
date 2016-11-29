@@ -1,12 +1,12 @@
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Tue Nov 29 05:33:40 2016) by ROOT version5.34/36
+//=========  (Tue Nov 29 21:20:03 2016) by ROOT version5.34/36
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
    cnv->SetHighLightColor(2);
-   cnv->Range(-0.4989387,-0.3318237,3.678936,3.846051);
+   cnv->Range(-25.2438,-19.25436,124.4921,130.4815);
    cnv->SetFillColor(0);
    cnv->SetBorderMode(0);
    cnv->SetBorderSize(2);
@@ -21,8 +21,8 @@
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH2F *h_m1_vs_m2 = new TH2F("h_m1_vs_m2","h_m1_vs_m2",66,0.2113,3.5536,66,0.2113,3.5536);
-   h_m1_vs_m2->SetBinContent(4623,79999);
+   TH2F *h_m1_vs_m2 = new TH2F("h_m1_vs_m2","h_m1_vs_m2",120,0.2113,120,120,0.2113,120);
+   h_m1_vs_m2->SetBinContent(1230,79999);
    h_m1_vs_m2->SetEntries(79999);
    h_m1_vs_m2->SetLineStyle(0);
    h_m1_vs_m2->SetMarkerStyle(20);
@@ -52,7 +52,7 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 10 GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 10 GeV, c#tau_{#gamma_{D}} = 0 mm}}","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","#splitline{pp #rightarrow h #rightarrow 2n_{1} #rightarrow 2n_{D} + 2 #gamma_{D} #rightarrow 2n_{D} + 4#mu}{#splitline{m_{h} = 125 GeV, m_{n_{1}} = 30  GeV, m_{n_{D}} = 1 GeV}{m_{#gamma_{D}} = 10 GeV, c#tau_{#gamma_{D}} = 0 mm}}","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
